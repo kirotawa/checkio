@@ -3,7 +3,6 @@ CONSONANTS = "BCDFGHJKLMNPQRSTVWXZ"
 
 
 def checkio(text):
-    import pdb;pdb.set_trace()
     text = text.upper()
     text += " "
     match_str = ""
