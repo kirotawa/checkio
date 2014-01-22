@@ -6,7 +6,6 @@ def checkio(text):
     text = text.upper()
     text += " "
     match_str = ""
-    words = 0
     words_ok = 0
     for l in text:
         if l in VOWELS or l  in CONSONANTS:
@@ -17,7 +16,6 @@ def checkio(text):
         elif l.isdigit():
             match_str += 'n'
         else:
-            words += 1
             if not 'vv' in match_str and not 'cc' in match_str and match_str and not 'n' in match_str and len(match_str) >1:
                 words_ok += 1
             match_str = ""
